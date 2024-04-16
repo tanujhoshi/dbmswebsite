@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>SQL Operators</h3>
+    Operators are used with WHERE clause to filter the result-set. Here are few examples of SQL operators:<br>
+    <h4>Arithmatic Operator</h4>
+    Syntax :<br>
+    update table_name set column = column + increment;<br><br>
+    <img src="../images/Screenshot 2024-04-14 163808.png"><br><br>
+    <h4>Relational operator</h4>
+    Syntax :<br>
+    select * from table_name where column1 relational_operator condition;<br><br>
+    <img src="../images/Screenshot 2024-04-14 164337.png"><br><br>
+    <h4>Logical Operator</h4>
+    Syntax :<br>
+    select * from table_name where (column1 relational_operator1 condition1) logical_operator (column2
+    relational_operator2 condition2);<br><br>
+    <img src="../images/Screenshot 2024-04-14 165532.png"><br><br>
+    <h4>In/not In Operator</h4>
+
+    To select the content equal to the values.<br>
+    Syntax :<br>
+    select * from table_name where column1 in (list of values);<br><br>
+
+    To select the content not equal to the values.<br>
+    Syntax :<br>
+    select * from table_name where column1 not in(list of values);<br>
+    <img src="../images/Screenshot 2024-04-14 165824.png"><br><br>
+
+    <h4>Between Operator</h4>
+    This operator selects records between two specified values.<br>
+    Syntax :<br>
+    select * from table_name where column_name between value1 and value2;<br><br>
+    <img src="../images/Screenshot 2024-04-14 165949.png"><br><br>
+    <h4>Pattern Matching Operator</h4>
+    The LIKE operator allows you to search for a specific pattern within text fields.<br><br>
+    For specific no. of characters.<br>
+    Syntax :<br>
+    select * from table_name where column_name like '___';<br><br>
+    For any character at that position.<br>
+    Syntax :<br>
+    select * from table_name where column_name like '_%';<br><br>
+    <img src="../images/Screenshot 2024-04-14 170221.png"><br><br>
+
+    <h4>NULL/not NULL Operator</h4>
+    Selects records with null or non-null values in a particular field.<br>
+    Syntax:<br>
+    select * from table_name where column is null / not null ;<br><br>
+    <img src="../images/Screenshot 2024-04-14 170739.png"><br><br>
+
+</body>
+</html>

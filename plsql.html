@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plsql</title>
+    <style>
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sql.html">Sql</a>
+        <a href="plsql.html">PLSql</a>
+    </nav>
+    <section>
+        <h4>PL/SQL Constants</h4>
+        <p>A constant is a value used in a PL/SQL block that remains unchanged throughout the program. It is a
+            user-defined literal value. It can be declared and used instead of actual values.
+        </p>
+    </section>
+    <section>
+        <h4>PL/SQL Constants</h4>
+        A constant is a value used in a PL/SQL block that remains unchanged throughout the program. It is a user-defined
+        literal value. It can be declared and used instead of actual values.<br><br>
+
+        Syntax:<br>
+        constant_name CONSTANT datatype := VALUE;<br><br>
+        <img src="images/ok.png">
+
+        Constant_name:it is the name of constant just like variable name. The constant word is a reserved word and its
+        value
+        does not change.<br>
+        VALUE: it is a value which is assigned to a constant when it is declared. It can not be assigned later.<br><br>
+
+        <h3>CONTROL STATEMENTS</h3>
+        <h4>PL/SQL If</h4>
+        PL/SQL supports the programming language features like conditional statements and iterative statements.<br><br>
+
+        Syntax: (IF-THEN statement):<br>
+        <img src="images/ifthen.png">
+
+        IF condition<br>
+        THEN<br>
+        Statement: {It is executed when condition is true}<br>
+        END IF;<br>
+        This syntax is used when you want to execute statements only when condition is TRUE.<br><br>
+
+        Syntax: (IF-THEN-ELSE statement):<br>
+        IF condition<br>
+        THEN<br>
+        {...statements to execute when condition is TRUE...}<br>
+        ELSE<br>
+        {...statements to execute when condition is FALSE...}<br>
+        END IF;<br>
+        This syntax is used when you want to execute one set of statements when condition is TRUE or a different set of
+        statements when condition is FALSE.<br><br>
+        <img src="images/imp.png">
+
+        <h4> PL/SQL Loop</h4>
+        The PL/SQL loops are used to repeat the execution of one or more statements for specified number of times. These
+        are
+        also known as iterative control statements.<br><br>
+
+        Syntax:<br>
+        LOOP<br>
+        Sequence of statements;<br>
+        END LOOP;<br>
+        <img src="images/exit.png">
+
+        <h4> PL/SQL Exit Loop</h4>
+        PL/SQL exit loop is used when a set of statements is to be executed at least once before the termination of the
+        loop. There must be an EXIT condition specified in the loop, otherwise the loop will get into an infinite number
+        of
+        iterations. After the occurrence of EXIT condition, the process exits the loop.<br><br>
+
+        Syntax:<br>
+        LOOP<br>
+        statements;<br>
+        EXIT;<br>
+        {or EXIT WHEN condition;}<br>
+        END LOOP;<br>
+        <img src="images/exit.png">
+
+        <h4>PL/SQL While Loop</h4>
+        PL/SQL while loop is used when a set of statements has to be executed as long as a condition is true, the While
+        loop
+        is used. The condition is decided at the beginning of each iteration and continues until the condition becomes
+        false.<br><br>
+
+        Syntax:<br>
+        WHILE (condition)<br>
+        LOOP statements;<br>
+        END LOOP;<br>
+        <img src="images/while.png">
+
+        <h4>PL/SQL For Loop</h4>
+        PL/SQL for loop is used when when you want to execute a set of statements for a predetermined number of times.
+        The
+        loop is iterated between the start and end integer values. The counter is always incremented by 1 and once the
+        counter reaches the value of end integer, the loop ends.<br><br>
+
+        Syntax:<br><br>
+        FOR counter IN initial_value .. final_value LOOP<br>
+        LOOP statements;<br>
+        END LOOP;<br><br>
+        <img src="images/for.png">
+        initial_value : Start integer value<br>
+        final_value : End integer value<br><br>
+
+        <h4> PL/SQL GOTO Statement</h4> <br>
+        In PL/SQL, GOTO statement makes you able to get an unconditional jump from the GOTO to a specific executable
+        statement label in the same subprogram of the PL/SQL block. Here the label declaration which contains the
+        label_name
+        encapsulated within the '<<h4>>' symbol and must be followed by at least one statement to execute.<br><br>
+
+            Syntax:<br>
+            GOTO label_name;<br><br>
+            <img src="images/goto.png">
+
+            <h3>PROCEDURES</h3>
+            The PL/SQL stored procedure or simply a procedure is a PL/SQL block which performs one or more specific
+            tasks.
+            It is just like procedures in other programming languages. The procedure contains a header and a body.
+            Header: The header contains the name of the procedure and the parameters or variables passed to the
+            procedure.<br>
+            Body: The body contains a declaration section, execution section and exception section similar to a general
+            PL/SQL block.<br><br>
+
+            Syntax:<br>
+            CREATE [OR REPLACE] PROCEDURE procedure_name<br>
+            [ (parameter [,parameter]) ]<br>
+            IS<br>
+            [declaration_section]<br>
+            BEGIN<br>
+            executable_section<br>
+            [EXCEPTION exception_section]<br>
+            END [procedure_name];<br>
+            <img src="images/creat.png">
+
+
+            Syntax:<br>
+            DROP PROCEDURE procedure_name;<br>
+            <img src="images/drop.png">
+
+            <h3>FUNCTIONS</h3>
+            The PL/SQL Function is very similar to PL/SQL Procedure. The main difference between procedure and a
+            function
+            is, a function must always return a value, and on the other hand a procedure may or may not return a value.
+            Except this, all the other things of PL/SQL procedure are true for PL/SQL function too.<br><br>
+
+            Syntax:<br>
+            CREATE [OR REPLACE] FUNCTION function_name [parameters]<br>
+            [(parameter_name [IN | OUT | IN OUT] type [, ...])]<br>
+            RETURN return_datatype<br>
+            {IS | AS}<br>
+            BEGIN<br>
+            (function_body)<br>
+            <img src="images/createfun.png">
+
+
+            <h3>CURSORS</h3>
+            When an SQL statement is processed, Oracle creates a memory area known as context area. A cursor is a
+            pointer to
+            this context area. It contains all information needed for processing the statement. In PL/SQL, the context
+            area
+            is controlled by Cursor. A cursor contains information on a select statement and the rows of data accessed
+            by
+            it. A cursor is used to referred to a program to fetch and process the rows returned by the SQL statement,
+            one
+            at a time.<br><br>
+            There are two types of cursors:<br>
+
+            1.PL/SQL Implicit Cursors<br>
+            The implicit cursors are automatically generated by Oracle while an SQL statement is executed, if you don't
+            use
+            an explicit cursor for the statement. These are created by default to process the statements when DML
+            statements
+            like INSERT, UPDATE, DELETE etc. are executed. Orcale provides some attributes known as Implicit cursor's
+            attributes to check the status of DML operations. Some of them are: %FOUND, %NOTFOUND, %ROWCOUNT and
+            %ISOPEN.
+            For example: When you execute the SQL statements like INSERT, UPDATE, DELETE then the cursor attributes tell
+            whether any rows are affected and how many have been affected. If you run a SELECT INTO statement in PL/SQL
+            block, the implicit cursor attribute can be used to find out whether any row has been returned by the SELECT
+            statement. It will return an error if there no data is selected.<br>
+
+            2.PL/SQL Explicit Cursors<br>
+            The Explicit cursors are defined by the programmers to gain more control over the context area. These
+            cursors
+            should be defined in the declaration section of the PL/SQL block. It is created on a SELECT statement which
+            returns more than one row.<br><br>
+
+            Syntax:<br>
+            CURSOR cursor_name IS select_statement;<br><br>
+            <img src="images/">
+
+            <h3>EXCEPTION HANDLING</h3>
+            An error occurs during the program execution is called Exception in PL/SQL. PL/SQL facilitates programmers
+            to
+            catch such conditions using exception block in the program and an appropriate action is taken against the
+            error
+            condition.<br><br>
+
+            PL/SQL Exception Handling<br>
+            Syntax:<br>
+            DECLARE<br>
+            (declarations section)<br>
+            BEGIN<br>
+            (executable command(s))<br>
+            EXCEPTION<br>
+            (exception handling goes here)<br>
+            WHEN exception1 THEN<br>
+            exception1-handling-statements<br>
+            WHEN exception2 THEN<br>
+            exception2-handling-state<br>
+            ments WHEN exception3 THEN<br>
+            exception3-handling-statements<br>
+            ........<br>
+            WHEN others THEN<br>
+            exception3-handling-statements<br>
+            END;<br>
+            <img src="images/eh.png">
+
+            <h3>TRIGGERS</h3>
+            Trigger is invoked by Oracle engine automatically whenever a specified event occurs.Trigger is stored into
+            database and invoked repeatedly, when specific condition match. Triggers are stored programs, which are
+            automatically executed or fired when some event occurs. Triggers are written to be executed in response to
+            any
+            of the following events.<br>
+            A database manipulation (DML) statement (DELETE, INSERT, or UPDATE).<br>
+            A database definition (DDL) statement (CREATE, ALTER, or DROP).<br>
+            A database operation (SERVERERROR, LOGON, LOGOFF, STARTUP, or SHUTDOWN).<br>
+            Triggers could be defined on the table, view, schema, or database with which the event is
+            associated.<br><br>
+            <h4>
+                Creating a trigger:</h4><br>
+            Syntax:<br>
+            CREATE [OR REPLACE ] TRIGGER trigger_name<br>
+            {BEFORE | AFTER | INSTEAD OF }<br>
+            {INSERT [OR] | UPDATE [OR] | DELETE}<br>
+            [OF col_name]<br>
+            ON table_name<br>
+            [REFERENCING OLD AS o NEW AS n]<br>
+            [FOR EACH ROW]<br>
+            WHEN (condition)<br>
+            DECLARE<br>
+            Declaration-statements<br>
+            BEGIN<br>
+            Executable-statements<br>
+            EXCEPTION<br>
+            Exception-handling-statements<br>
+            END;<br>
+
+
+
+
+
+
+
+
+
+    </section>
+</body>
+
+</html>

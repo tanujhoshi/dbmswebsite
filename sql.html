@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL</title>
+    <style>
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 5vh;
+        }
+
+        #sec2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #sec2 a {
+            text-decoration: none;
+            font-size: large;
+            color: black;
+
+        }
+
+        iframe {
+            width: 80vw;
+            height: 80vh;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sql.html">Sql</a>
+        <a href="plsql.html">PLSql</a>
+    </nav>
+    <section>
+        <p>
+            Structured Query Language (SQL) is the language used to manipulate relational databases. SQL is a very
+            simple and powerful language used to
+            create, manipulate and retrieve data and structures in the database. <br>
+            SQL is a non-procedural language i.e. it describes what is required without how result should be
+            computed.
+        </p>
+        <p>
+            SQL statements can be categorized as:<br><br>
+            1. Data Manipulation Language (DML) - Used for adding, deleting or modifying records in a table.<br>
+            some of them include : INSERT , UPDATE , DELETE.<br>
+            2. Data Control Language (DCL) - Used for granting or revoking permissions on objects to users and
+            roles.<br>
+            some of them include : GRANT , REVOKE , SAVEPOINT. <br>
+            3. Data Definition Language (DDL) - Used for creating new tables or modifying existing ones.<br>
+            some of them include : CREATE , ALTER , DROP.<br>
+            4. Data Query Language (DQL) - Used for performing queries on the data within schema objects.<br>
+            some of them include : SELECT.<br>
+        </p>
+    </section>
+    <section id="sec2">
+        <div>
+            <a href="sql/ddl.html" target="Ans">Data Definition Language</a><br>
+            <a href="sql/dql.html" target="Ans">Data Query Language</a><br>
+            <a href="sql/tcl.html" target="Ans">Transaction Control Language</a><br>
+            <a href="sql/functions.html" target="Ans">Functions</a><br>
+            <a href="sql/claues.html" target="Ans">Clause</a><br>
+        </div>
+        <iframe src="" name="Ans" id="w1"></iframe>
+
+    </section>
+
+</body>
+
+</html>

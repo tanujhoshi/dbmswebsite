@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>SQL Functions</h3>
+    A Function is a special type of predefined command set that performs some operation and returns a single value.<br>
+    Some builtin functions provided by SQL are:<br>
+    <h4>GROUP Function</h4>
+    A GROUP function in sql performs a calculation on multiple values and returns a single value.<br><br>
+    1.SUM=<br>
+    This function adds up all the selected values from a given expression.<br><br>
+    Syntax:<br>
+    sum([distinct | all] expression).<br><br>
+    <img src="../images/Screenshot 2024-04-16 174222.png"><br><br>
+    2.COUNT=<br>
+    This function counts the number of rows in a given expression.<br><br>
+    Syntax:<br>
+    count([distinct | all] Expression)<br>
+    OR<br>
+    count(*)<br><br>
+    <img src="../images/Screenshot 2024-04-16 174649.png"><br><br>
+    3.MAX=<br>
+    This function returns the maximum value from a given expression.<br><br>
+    Syntax:<br>
+    max([distinct | all] expression )<br><br>
+    <img src="../images/Screenshot 2024-04-16 174342.png"><br><br>
+    4.MIN=<br>
+    This function returns the minimum value from a given expression.<br><br>
+    Syntax:<br>
+    min([distinct | all] expression)<br><br>
+    <img src="../images/Screenshot 2024-04-16 174440.png"><br><br>
+    5.AVG=<br>
+    This function computes the average of given data.<br><br>
+    Syntax:<br>
+    avg([distinct | all] expression)<br><br>
+    <img src="../images/Screenshot 2024-04-16 174533.png"><br><br>
+
+    <h4>CHARACTER Function</h4>
+    CHARACTER Function accept character inputs and can return either characters or number values as output.<br><br>
+    1.LOWER=<br>
+    This function converts a string into lowercase.<br><br>
+    Syntax:<br>
+    lower(str)<br>
+    OR<br>
+    lcase(str)<br><br>
+    2.UPPER=<br>
+    This function converts a string into uppercase.<br><br>
+    Syntax:<br>
+    upper(str)<br>
+    OR<br>
+    ucase(str)<br><br>
+    <img src="../images/Screenshot 2024-04-16 180037.png"><br><br>
+    3.CONCAT=<br>
+    This function concatenates two or more strings together to form one string.<br><br>
+    Syntax:<br>
+    concat(string1,string2,...,stringN)<br><br>
+    <img src="../images/Screenshot 2024-04-16 180851.png"><br><br>
+    4.LENGTH=<br>
+    This function returns the length of a string in bytes.<br><br>
+    Syntax:<br>
+    length(expression)<br><br>
+    5.SUBSTR=<br>
+    This function extracts a substring from a given string.<br><br>
+    Syntax:<br>
+    substr(string,start [,length])<br><br>
+    <img src="../images/Screenshot 2024-04-16 181227.png"><br><br>
+    6.INSTR=<br>
+    This function searches for given second string into the given first string.<br><br>
+    Syntax:<br>
+    instr(string,search_string)<br><br>
+    <img src="../images/Screenshot 2024-04-16 181730.png"><br><br>
+
+    <h4>DATE Function</h4>
+    DATE Function operate on values of the DATE datatype. In various scenarios instead of date, datetime (time is also
+    involved with date) is used.<br>
+
+    DATE format YYYY-MM-DD<br>
+    DATETIME format: YYYY-MM-DD HH:MI: SS<br>
+    TIMESTAMP format: YYYY-MM-DD HH:MI: SS<br>
+    YEAR format YYYY or YY<br><br>
+    1.CURDATE=<br>
+    This function returns the current date.<br><br>
+    Syntax:<br>
+    curdate()<br>
+    OR<br>
+    current_date()<br><br>
+    2.DATE=<br>
+    This function extracts the date part of a date or datetime expression.<br><br>
+    Syntax:<br>
+    date(expression)<br><br>
+    3.MONTH=<br>
+    This function returns the month from the date passed.<br><br>
+    Syntax:<br>
+    month(date)<br><br>
+    4.MONTHNAME=<br>
+    This function returns the name of the month for a date.<br><br>
+    Syntax:<br>
+    monthname(date)
+    5.DAY=<br>
+    This function returns the day part of a date.<br><br>
+    Syntax:<br>
+    day(date)<br><br>
+    <img src="../images/Screenshot 2024-04-16 182222.png"><br><br>
+    6.YEAR=<br>
+    This function returns the year part of a date.<br><br>
+    Syntax:<br>
+    year(date)<br><BR>
+    7.DAYOFMONTH=<br>
+    This function returns the day of month.<br><br>
+    Syntax:<br>
+    dayofmonth(date)<br><br>
+    8.DAYOFWEEK=<br>
+    This function returns the day of week.<br><br>
+    Syntax:<br>
+    dayofweek(date)<br><br>
+    9.DAYOFYEAR=<br>
+    This function returns the day of the year.<br><br>
+    Syntax:<br>
+    dayofyear(date)<br><br>
+    <img src="../images/Screenshot 2024-04-16 182528.png"><br><br>
+    10.NOW=<br>
+    This function returns the current date and time.<br><br>
+    Syntax:<br>
+    now()<br><br>
+    <img src="../images/Screenshot 2024-04-16 182639.png"><br><br>
+</body>
+
+</html>

@@ -1,0 +1,631 @@
+<html>
+
+<body>
+    <h2>DATABASE MANAGEMENT SYSTEM</h2><br>
+    <p> A database is a very well organised collection of related data used by application systems of somme particular
+        organisation. A database need to be managed by an appropriate package of software which is called DBMS (Database
+        management System).
+        DBMS acts a intermediator between the user and the database. </p>
+    <p>DBMS is basically a collection of programs whose primary purpose is to facilitate a user to insert, update,
+        retrieve data and thus
+        make it easy to design, maintain and access databases.<br>
+        The DBMS is also incharge of access, security, storage and host of other functions for the database system.
+    </p>
+    <p>The DBMS provides security facilities in a variety of forms, both to prevent unauthorized access and to prevent
+        authorized
+        users from accessing data concurrently without any inconsistency in the database.
+    </p>
+    <p>
+    <ul> various important functions performed by DBMS that guarantees the integrity and consistency of data in the
+        databases are:
+        <li>Provides data storage management and data dictionary management facilities.</li>
+        <li> Creates a security system that enforces user security and data privacy.</li>
+        <li> Provides data backup and recovery to ensure data safty and preserve database's integrity.</li>
+        <li> Enforces integrity rules, thus minimizing data consistency.
+        </li>
+    </ul>
+
+
+    <li> The various applications using DBMS are:
+        <ol>
+            Super Market Product Inventory System </ol>
+        <ol> Stock Trading systems </ol>
+        <ol> Computerized Library Systems </ol>
+        <ol> National insurance Claims system </ol>
+        <ol> Railway reservation system
+        </ol>
+    </li>
+    <li>
+        The various commercially available database management system,
+        <ol>For small organistions: MS-Access, File Maker Pro, Superbase etc.</ol>
+        <ol>For the enterprise: Oracle,SQL Server, MySQL, Sybase, DB2, Paradox, Dbase etc.</ol>
+    </li>
+    </p>
+    <h2>STRUCTURED QUERY LANGUAGE</h2><BR>
+    <P>
+        In June 1970, Dr. E.F.Codd published a paper entitled "A relational model of data for large shared data banks".
+        This Relational Model, sponsored by IBM, then came to be accepted as a definitive model for Relational Database
+        Management System
+        (RDBMS). The language developed by IBM to manipulate the data stored within Codd's model was originally called
+        Structured English
+        Query Language (SEQUEL) with the word 'English' later being dropped in favor of Structured Query Language.
+
+    </P>
+    <p>
+        Structured Query Language (SQL) is the language used to manipulate relational databases. SQL is a very simple
+        and powerful language used to
+        create, manipulate and retrieve data and structures in the database. <br>
+        SQL is a non-procedural language i.e. it describes what is required without how result should be computed.
+    </p>
+    SQL statements can be categorized as:<br><br>
+    1. Data Manipulation Language (DML) - Used for adding, deleting or modifying records in a table.<br>
+    some of them include : INSERT , UPDATE , DELETE.<br>
+    2. Data Control Language (DCL) - Used for granting or revoking permissions on objects to users and roles.<br>
+    some of them include : GRANT , REVOKE , SAVEPOINT. <br>
+    3. Data Definition Language (DDL) - Used for creating new tables or modifying existing ones.<br>
+    some of them include : CREATE , ALTER , DROP.<br>
+    4. Data Query Language (DQL) - Used for performing queries on the data within schema objects.<br>
+    some of them include : SELECT.<br>
+    <h3>SQL Commands</h3>
+    <h3>
+        CREATE
+    </h3>
+    <h4>Create Table</h4>
+    This command is used to create table in a database.<br>
+    Syntax :<br>
+    create table table_name(column1 datatype, column2 datatype, ....);<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 151146.png"><br><br>
+    <h4>Create Database</h4>
+    This command is used to create new database.<br>
+    Syntax :<br>
+    create database database_name;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 145922.png"><br><br>
+
+    <h3>SHOW</h3>
+    <h4>Show Database</h4>
+    This command is used to display all databases present in the server.<br>
+    Syntax :<br>
+    show databases;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 150117.png"><br><br>
+    <h4>Show Table</h4>
+    This command is used to display all tables present in the selected database.<br>
+    Syntax :<br>
+    show tables;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 170355.png"><br><br>
+
+    <h3>USE</h3>
+    This command is used to select which database you want to work with.<br>
+    Syntax :<br>
+    use database_name;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 150320.png"><br><br>
+
+    <h3>DESCRIBE</h3>
+    This command is used to describe the structure of a table.<br>
+    Syntax :<br>
+    describe table_name;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 151308.png"><br><br>
+
+    <h3>INSERT</h3>
+    The insert statement is used to add records in a table.<br><br>
+    To insert data for all the columns into a table.<br>
+    Syntax :<br>
+    insert into table_name values (value1, value2, ...);<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 152258.png"><br><br>
+    To insert data only for some specific columns into a table.<br>
+    Syntax :<br>
+    insert into table_name(col1, col2) values(val1, val2, ...);<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 154458.png"><br><br>
+
+    <h3>SELECT</h3>
+    This command is used to retrieve a subset of rows and columns from one or more tables present in a database.<br><br>
+    To select specific column or columns from a table.<br>
+    Syntax:<br>
+    select column1, column2... from table_name;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 155433.png"><br><br>
+    To show all rows and columns from a table.<br>
+    Syntax :<br>
+    select * from table_name;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 152607.png"><br><br>
+
+    <h3>RENAME</h3>
+    This command is used to change the name of table permenently.<br>
+    Syntax :<br>
+    rename table old_table_name to new_table_name;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 160059.png"><br><br>
+
+    <h3>UPDATE</h3>
+    This command is used to update or modify data in a table.<br>
+    SET keyword is used to set the updated field's value.<br><br>
+    To update the whole column at once.<br>
+    Syntax :<br>
+    update table_name set column=new_value;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 160456.png"><br><br>
+    To update particular row.<br>
+    Syntax :<br>
+    update table_name set column=new_value where condition;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 160858.png"><br><br>
+
+    <h3>DELETE</h3>
+    This command is used to delete existing row from a table. <br><br>
+    To remove all rows from a table.<br>
+    Syntax :<br>
+    delete from table_name;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 161139.png"><br><br>
+    To remove specific number of rows based on conditions.<br>
+    Syntax :<br>
+    delete from table_name where condition;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 155858.png"><br><br>
+
+    <h3>DROP</h3>
+    This command is used to permanently delete a table or a database.<br><br>
+    To drop an entire table.<br>
+    Syntax :<br>
+    drop table table_name;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 162322.png"><br><br>
+    To drop a database.<br>
+    Syntax:<br>
+    drop database database_name;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 162550.png"><br><br>
+
+    <h3>ALTER</h3>
+    This command is used to make changes in the structure of an existing table. This command is used to add, drop and
+    modify the column of an
+    existing table.<br><br>
+    To add a new column into existing table.<br>
+    Syntax:<br>
+    alter table table_name add column_name datatype;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 175352.png"><br><br>
+    To delete an existing column from table.<br>
+    Syntax:<br>
+    alter table table_name drop column column_name;<br><br>
+    To modify the data type of a column.<br>
+    Syntax:<br>
+    alter table table_name modify column_name new_datatype;<br><br>
+
+    <h3>COMMIT</h3>
+    It is used in transaction processing, it commits the changes made by you since the last commit or rollback
+    statement.<br><br>
+    It is used to save (commit) the changes made in a transaction block and release any locks that were held by the
+    transaction block. If
+    Used to save (commit) the changes made in a transaction block.<br><br>
+    Syntax:<br>
+    commit;<br><br>
+
+    <h3>ROLLBACK</h3>
+    It is used to undo the changes made in a transaction block and return back to the previous state.<br><br>
+    Syntax:<br>
+    rollback;<br><br>
+
+
+
+    <h3>SQL Operators</h3>
+    Operators are used with WHERE clause to filter the result-set. Here are few examples of SQL operators:<br>
+    <h4>Arithmatic Operator</h4>
+    Syntax :<br>
+    update table_name set column = column + increment;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 163808.png"><br><br>
+    <h4>Relational operator</h4>
+    Syntax :<br>
+    select * from table_name where column1 relational_operator condition;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 164337.png"><br><br>
+    <h4>Logical Operator</h4>
+    Syntax :<br>
+    select * from table_name where (column1 relational_operator1 condition1) logical_operator (column2
+    relational_operator2 condition2);<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 165532.png"><br><br>
+    <h4>In/not In Operator</h4>
+
+    To select the content equal to the values.<br>
+    Syntax :<br>
+    select * from table_name where column1 in (list of values);<br><br>
+
+    To select the content not equal to the values.<br>
+    Syntax :<br>
+    select * from table_name where column1 not in(list of values);<br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 165824.png"><br><br>
+
+    <h4>Between Operator</h4>
+    This operator selects records between two specified values.<br>
+    Syntax :<br>
+    select * from table_name where column_name between value1 and value2;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 165949.png"><br><br>
+    <h4>Pattern Matching Operator</h4>
+    The LIKE operator allows you to search for a specific pattern within text fields.<br><br>
+    For specific no. of characters.<br>
+    Syntax :<br>
+    select * from table_name where column_name like '___';<br><br>
+    For any character at that position.<br>
+    Syntax :<br>
+    select * from table_name where column_name like '_%';<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 170221.png"><br><br>
+
+    <h4>NULL/not NULL Operator</h4>
+    Selects records with null or non-null values in a particular field.<br>
+    Syntax:<br>
+    select * from table_name where column is null / not null ;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-14 170739.png"><br><br>
+
+    <h3>SQL CLAUSES</h3>
+    <p>
+        Clauses in SQL are similar to conditions in high-level languages. SQL being a query language requires a method
+        to apply constraints on the data
+        and for this we use Clauses.<br>
+        Clauses help us to restrict and manage the data using valid constraints on the data in our database.<br>
+
+    </p>
+    We have variety of clauses available in SQL which are:<br>
+    <h4>WHERE Clause</h4>
+    Syntax:<br>
+    select * from table_name where condition;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 171448.png"><br><br>
+    <h4>ORDER BY Clause</h4>
+    Syntax:<br>
+    Select * from table_name order by column1,column2...;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 171920.png"><br><br>
+    <h4>GROUP BY Clause</h4>
+    Syntax:<br>
+    select * from table_name group by column1,column2..;<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 172533.png"><br><br>
+    <H4>HAVING Clause</H4>
+    Note:Having clause can be used only after Group By clause.<br><br>
+    Syntax:<br>
+    Select column from table_name group by column having condition;<br><br>
+    <img src=""><br><br>
+
+    <h3>SQL Functions</h3>
+    A Function is a special type of predefined command set that performs some operation and returns a single value.<br>
+    Some builtin functions provided by SQL are:<br>
+    <h4>GROUP Function</h4>
+    A GROUP function in sql performs a calculation on multiple values and returns a single value.<br><br>
+    1.SUM=<br>
+    This function adds up all the selected values from a given expression.<br><br>
+    Syntax:<br>
+    sum([distinct | all] expression).<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 174222.png"><br><br>
+    2.COUNT=<br>
+    This function counts the number of rows in a given expression.<br><br>
+    Syntax:<br>
+    count([distinct | all] Expression)<br>
+    OR<br>
+    count(*)<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 174649.png"><br><br>
+    3.MAX=<br>
+    This function returns the maximum value from a given expression.<br><br>
+    Syntax:<br>
+    max([distinct | all] expression )<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 174342.png"><br><br>
+    4.MIN=<br>
+    This function returns the minimum value from a given expression.<br><br>
+    Syntax:<br>
+    min([distinct | all] expression)<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 174440.png"><br><br>
+    5.AVG=<br>
+    This function computes the average of given data.<br><br>
+    Syntax:<br>
+    avg([distinct | all] expression)<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 174533.png"><br><br>
+
+    <h4>CHARACTER Function</h4>
+    CHARACTER Function accept character inputs and can return either characters or number values as output.<br><br>
+    1.LOWER=<br>
+    This function converts a string into lowercase.<br><br>
+    Syntax:<br>
+    lower(str)<br>
+    OR<br>
+    lcase(str)<br><br>
+    2.UPPER=<br>
+    This function converts a string into uppercase.<br><br>
+    Syntax:<br>
+    upper(str)<br>
+    OR<br>
+    ucase(str)<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 180037.png"><br><br>
+    3.CONCAT=<br>
+    This function concatenates two or more strings together to form one string.<br><br>
+    Syntax:<br>
+    concat(string1,string2,...,stringN)<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 180851.png"><br><br>
+    4.LENGTH=<br>
+    This function returns the length of a string in bytes.<br><br>
+    Syntax:<br>
+    length(expression)<br><br>
+    5.SUBSTR=<br>
+    This function extracts a substring from a given string.<br><br>
+    Syntax:<br>
+    substr(string,start [,length])<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 181227.png"><br><br>
+    6.INSTR=<br>
+    This function searches for given second string into the given first string.<br><br>
+    Syntax:<br>
+    instr(string,search_string)<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 181730.png"><br><br>
+
+    <h4>DATE Function</h4>
+    DATE Function operate on values of the DATE datatype. In various scenarios instead of date, datetime (time is also
+    involved with date) is used.<br>
+
+    DATE format YYYY-MM-DD<br>
+    DATETIME format: YYYY-MM-DD HH:MI: SS<br>
+    TIMESTAMP format: YYYY-MM-DD HH:MI: SS<br>
+    YEAR format YYYY or YY<br><br>
+    1.CURDATE=<br>
+    This function returns the current date.<br><br>
+    Syntax:<br>
+    curdate()<br>
+    OR<br>
+    current_date()<br><br>
+    2.DATE=<br>
+    This function extracts the date part of a date or datetime expression.<br><br>
+    Syntax:<br>
+    date(expression)<br><br>
+    3.MONTH=<br>
+    This function returns the month from the date passed.<br><br>
+    Syntax:<br>
+    month(date)<br><br>
+    4.MONTHNAME=<br>
+    This function returns the name of the month for a date.<br><br>
+    Syntax:<br>
+    monthname(date)
+    5.DAY=<br>
+    This function returns the day part of a date.<br><br>
+    Syntax:<br>
+    day(date)<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 182222.png"><br><br>
+    6.YEAR=<br>
+    This function returns the year part of a date.<br><br>
+    Syntax:<br>
+    year(date)<br><BR>
+    7.DAYOFMONTH=<br>
+    This function returns the day of month.<br><br>
+    Syntax:<br>
+    dayofmonth(date)<br><br>
+    8.DAYOFWEEK=<br>
+    This function returns the day of week.<br><br>
+    Syntax:<br>
+    dayofweek(date)<br><br>
+    9.DAYOFYEAR=<br>
+    This function returns the day of the year.<br><br>
+    Syntax:<br>
+    dayofyear(date)<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 182528.png"><br><br>
+    10.NOW=<br>
+    This function returns the current date and time.<br><br>
+    Syntax:<br>
+    now()<br><br>
+    <img src="C:\Users\Nayan joshi\OneDrive\Pictures\tanu dbm\Screenshot 2024-04-16 182639.png"><br><br>
+<!--PLSQL  CODE-->
+
+    <h2>PL/SQL</h2><br>
+    <p>PL/SQL stands for Procedural LANGUAGE/Structured Query Language. It is an extension to the Structured Query
+        Language. Oracle introduced PL/SQL to overcome some limitations of SQL and to provide more complete programming
+        solution to build critical applications.It is used to write procedures, functions, triggers, packages, etc., in
+        Oracle Database.</p>
+    <h3>DATA TYPLES, VARIABLES AND CONSTANTS
+    </h3>
+    A variable is a meaningful name which facilitates a programmer to store data temporarily during the execution of
+    code. It helps you to manipulate data in PL/SQL programs. It is nothing except a name given to a storage area. Each
+    variable in the PL/SQL has a specific data type which defines the size and layout of the variable's memory.<br><br>
+
+    Syntax:<br>
+    variable_name [CONSTANT] datatype [NOT NULL] [:= | DEFAULT initial_value]<br><br>
+
+    <h4> Initializing Variables in PL/SQL</h4>
+    Evertime you declare a variable, PL/SQL defines a default value NULL to it. If you want to initialize a variable
+    with other value than NULL value, you can do so during the declaration, by using any one of the following
+    methods.<br>
+    The DEFAULT keyword<br>
+    The assignment operator<br><br>
+
+
+
+    <h4>PL/SQL Constants</h4>
+    A constant is a value used in a PL/SQL block that remains unchanged throughout the program. It is a user-defined
+    literal value. It can be declared and used instead of actual values.<br><br>
+
+    Syntax:<br>
+    constant_name CONSTANT datatype := VALUE;<br><br>
+
+    Constant_name:it is the name of constant just like variable name. The constant word is a reserved word and its value
+    does not change.<br>
+    VALUE: it is a value which is assigned to a constant when it is declared. It can not be assigned later.<br><br>
+
+    <h3>CONTROL STATEMENTS</h3>
+    <h4>PL/SQL If</h4>
+    PL/SQL supports the programming language features like conditional statements and iterative statements.<br><br>
+
+    Syntax: (IF-THEN statement):<br>
+
+    IF condition<br>
+    THEN<br>
+    Statement: {It is executed when condition is true}<br>
+    END IF;<br>
+    This syntax is used when you want to execute statements only when condition is TRUE.<br><br>
+
+    Syntax: (IF-THEN-ELSE statement):<br>
+    IF condition<br>
+    THEN<br>
+    {...statements to execute when condition is TRUE...}<br>
+    ELSE<br>
+    {...statements to execute when condition is FALSE...}<br>
+    END IF;<br>
+    This syntax is used when you want to execute one set of statements when condition is TRUE or a different set of
+    statements when condition is FALSE.<br><br>
+
+    <h4> PL/SQL Loop</h4>
+    The PL/SQL loops are used to repeat the execution of one or more statements for specified number of times. These are
+    also known as iterative control statements.<br><br>
+
+    Syntax:<br>
+    LOOP<br>
+    Sequence of statements;<br>
+    END LOOP;<br>
+
+    <h4> PL/SQL Exit Loop</h4>
+    PL/SQL exit loop is used when a set of statements is to be executed at least once before the termination of the
+    loop. There must be an EXIT condition specified in the loop, otherwise the loop will get into an infinite number of
+    iterations. After the occurrence of EXIT condition, the process exits the loop.<br><br>
+
+    Syntax:<br>
+    LOOP<br>
+    statements;<br>
+    EXIT;<br>
+    {or EXIT WHEN condition;}<br>
+    END LOOP;<br>
+
+    <h4>PL/SQL While Loop</h4>
+    PL/SQL while loop is used when a set of statements has to be executed as long as a condition is true, the While loop
+    is used. The condition is decided at the beginning of each iteration and continues until the condition becomes
+    false.<br><br>
+
+    Syntax:<br>
+    WHILE (condition)<br>
+    LOOP statements;<br>
+    END LOOP;<br>
+
+    <h4>PL/SQL For Loop</h4>
+    PL/SQL for loop is used when when you want to execute a set of statements for a predetermined number of times. The
+    loop is iterated between the start and end integer values. The counter is always incremented by 1 and once the
+    counter reaches the value of end integer, the loop ends.<br><br>
+
+    Syntax:<br><br>
+    FOR counter IN initial_value .. final_value LOOP<br>
+    LOOP statements;<br>
+    END LOOP;<br><br>
+
+    initial_value : Start integer value<br>
+    final_value : End integer value<br><br>
+
+    <h4> PL/SQL GOTO Statement</h4> <br>
+    In PL/SQL, GOTO statement makes you able to get an unconditional jump from the GOTO to a specific executable
+    statement label in the same subprogram of the PL/SQL block. Here the label declaration which contains the label_name
+    encapsulated within the '<<h4>>' symbol and must be followed by at least one statement to execute.<br><br>
+
+        Syntax:<br>
+        GOTO label_name;<br><br>
+
+        <h3>PROCEDURES</h3>
+        The PL/SQL stored procedure or simply a procedure is a PL/SQL block which performs one or more specific tasks.
+        It is just like procedures in other programming languages. The procedure contains a header and a body.
+        Header: The header contains the name of the procedure and the parameters or variables passed to the
+        procedure.<br>
+        Body: The body contains a declaration section, execution section and exception section similar to a general
+        PL/SQL block.<br><br>
+
+        Syntax:<br>
+        CREATE [OR REPLACE] PROCEDURE procedure_name<br>
+        [ (parameter [,parameter]) ]<br>
+        IS<br>
+        [declaration_section]<br>
+        BEGIN<br>
+        executable_section<br>
+        [EXCEPTION exception_section]<br>
+        END [procedure_name];<br>
+
+        Syntax:<br>
+        DROP PROCEDURE procedure_name;<br>
+
+        <h3>FUNCTIONS</h3>
+        The PL/SQL Function is very similar to PL/SQL Procedure. The main difference between procedure and a function
+        is, a function must always return a value, and on the other hand a procedure may or may not return a value.
+        Except this, all the other things of PL/SQL procedure are true for PL/SQL function too.<br><br>
+
+        Syntax:<br>
+        CREATE [OR REPLACE] FUNCTION function_name [parameters]<br>
+        [(parameter_name [IN | OUT | IN OUT] type [, ...])]<br>
+        RETURN return_datatype<br>
+        {IS | AS}<br>
+        BEGIN<br>
+        (function_body)<br>
+
+        <h3>CURSORS</h3>
+        When an SQL statement is processed, Oracle creates a memory area known as context area. A cursor is a pointer to
+        this context area. It contains all information needed for processing the statement. In PL/SQL, the context area
+        is controlled by Cursor. A cursor contains information on a select statement and the rows of data accessed by
+        it. A cursor is used to referred to a program to fetch and process the rows returned by the SQL statement, one
+        at a time.<br><br>
+        There are two types of cursors:<br>
+
+        1.PL/SQL Implicit Cursors<br>
+        The implicit cursors are automatically generated by Oracle while an SQL statement is executed, if you don't use
+        an explicit cursor for the statement. These are created by default to process the statements when DML statements
+        like INSERT, UPDATE, DELETE etc. are executed. Orcale provides some attributes known as Implicit cursor's
+        attributes to check the status of DML operations. Some of them are: %FOUND, %NOTFOUND, %ROWCOUNT and %ISOPEN.
+        For example: When you execute the SQL statements like INSERT, UPDATE, DELETE then the cursor attributes tell
+        whether any rows are affected and how many have been affected. If you run a SELECT INTO statement in PL/SQL
+        block, the implicit cursor attribute can be used to find out whether any row has been returned by the SELECT
+        statement. It will return an error if there no data is selected.<br>
+
+        2.PL/SQL Explicit Cursors<br>
+        The Explicit cursors are defined by the programmers to gain more control over the context area. These cursors
+        should be defined in the declaration section of the PL/SQL block. It is created on a SELECT statement which
+        returns more than one row.<br><br>
+
+        Syntax:<br>
+        CURSOR cursor_name IS select_statement;<br><br>
+
+        <h3>EXCEPTION HANDLING</h3>
+        An error occurs during the program execution is called Exception in PL/SQL. PL/SQL facilitates programmers to
+        catch such conditions using exception block in the program and an appropriate action is taken against the error
+        condition.<br><br>
+
+        PL/SQL Exception Handling<br>
+        Syntax:<br>
+        DECLARE<br>
+        (declarations section)<br>
+        BEGIN<br>
+        (executable command(s))<br>
+        EXCEPTION<br>
+        (exception handling goes here)<br>
+        WHEN exception1 THEN<br>
+        exception1-handling-statements<br>
+        WHEN exception2 THEN<br>
+        exception2-handling-state<br>
+        ments WHEN exception3 THEN<br>
+        exception3-handling-statements<br>
+        ........<br>
+        WHEN others THEN<br>
+        exception3-handling-statements<br>
+        END;<br>
+
+        <h3>TRIGGERS</h3>
+        Trigger is invoked by Oracle engine automatically whenever a specified event occurs.Trigger is stored into
+        database and invoked repeatedly, when specific condition match. Triggers are stored programs, which are
+        automatically executed or fired when some event occurs. Triggers are written to be executed in response to any
+        of the following events.<br>
+        A database manipulation (DML) statement (DELETE, INSERT, or UPDATE).<br>
+        A database definition (DDL) statement (CREATE, ALTER, or DROP).<br>
+        A database operation (SERVERERROR, LOGON, LOGOFF, STARTUP, or SHUTDOWN).<br>
+        Triggers could be defined on the table, view, schema, or database with which the event is associated.<br><br>
+        <h4>
+            Creating a trigger:</h4><br>
+        Syntax:<br>
+        CREATE [OR REPLACE ] TRIGGER trigger_name<br>
+        {BEFORE | AFTER | INSTEAD OF }<br>
+        {INSERT [OR] | UPDATE [OR] | DELETE}<br>
+        [OF col_name]<br>
+        ON table_name<br>
+        [REFERENCING OLD AS o NEW AS n]<br>
+        [FOR EACH ROW]<br>
+        WHEN (condition)<br>
+        DECLARE<br>
+        Declaration-statements<br>
+        BEGIN<br>
+        Executable-statements<br>
+        EXCEPTION<br>
+        Exception-handling-statements<br>
+        END;<br>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
